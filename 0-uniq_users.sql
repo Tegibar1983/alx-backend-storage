@@ -1,0 +1,8 @@
+--create a table named user
+
+CREATE TABLE IF NOT EXISTS user(
+	id INT NOT NULL AUTO_INCREMENT,
+	email VARCHAR(255) NOT NULL UNIQUE,
+	name VARCHAR(255),
+	PRIMARY_KEY (id)
+);

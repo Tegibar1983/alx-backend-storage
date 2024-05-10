@@ -1,8 +1,7 @@
---create a table named user
-
-CREATE TABLE IF NOT EXISTS user(
-	id INT NOT NULL AUTO_INCREMENT,
-	email VARCHAR(255) NOT NULL UNIQUE,
-	name VARCHAR(255),
-	PRIMARY_KEY (id)
-);
+-- A SQL script that creates a table (called users) with following fields
+-- id, email, name
+CREATE TABLE IF NOT EXISTS users (
+        id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        email varchar(255) NOT NULL UNIQUE,
+        name varchar(255)
+)
